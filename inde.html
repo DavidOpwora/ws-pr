@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form action="login.php" method="post">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+    <p class="service-link">Don't have an account? <a href="https://www.davidsbuildingservices.com">Visit David's Building Services</a></p>
+  </div>
+  
+  <title>David's Building Services</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to David's Building Services</h1>
+  </header>
+  
+  <main>
+    <section id="inquiry">
+      <h2>Inquiry Form</h2>
+      <form action="submit_inquiry.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Submit Inquiry</button>
+      </form>
+    </section>
+    
+    <section id="purchase">
+      <h2>Purchase Form</h2>
+      <form action="submit_purchase.php" method="post">
+        <label for="product">Product:</label>
+        <select id="product" name="product" required>
+          <option value="product1">Appliances</option>
+          <option value="product2">Beverages</option>
+          <option value="product3">Liqour</option>
+        </select>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required>
+        <label for="payment">Payment Method:</label>
+        <select id="payment" name="payment" required>
+          <option value="credit">Credit Card</option>
+          <option value="paypal">PayPal</option>
+        </select>
+        <button type="submit">Submit Purchase</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
+</body>
+</html>
